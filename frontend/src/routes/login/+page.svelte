@@ -17,24 +17,21 @@
                 },
                 body: JSON.stringify({ email, password }),
             });
-
             const data = await response.json();
 
             if (!response.ok) {
                 throw new Error(data.message || 'Gagal login.');
             }
 
-            // Di aplikasi nyata, simpan token/user info di localStorage atau Svelte store
-            message = `Login berhasil! Selamat datang, ${data.user.username}.`;
-            // Redirect ke halaman dashboard atau halaman utama setelah login
-            // goto('/dashboard');
+            // Simpan data pengguna ke localStorage
+            localStorage.setItem('user', JSON.stringify(data.user));
 
-        } catch (err) { // Mengganti nama variabel ke 'err' adalah praktik umum
+            // Arahkan ke halaman utama setelah login berhasil
+            goto('/home');
+        } catch (err) {
             if (err instanceof Error) {
-                // Jika 'err' adalah objek Error, kita bisa akses .message dengan aman
                 message = err.message;
             } else {
-                // Fallback jika yang di-throw bukan objek Error
                 message = 'Terjadi kesalahan yang tidak diketahui.';
             }
         } finally {
