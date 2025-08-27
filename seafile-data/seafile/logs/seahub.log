@@ -1,0 +1,674 @@
+2025-08-08 15:43:15,068 [ERROR] django.pylibmc:132 get MemcachedError: error 2 from memcached_get(:1:CUR_TOPINFO): getaddrinfo() or getnameinfo() HOSTNAME LOOKUP FAILURE
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.HostLookupError: error 2 from memcached_get(:1:CUR_TOPINFO): getaddrinfo() or getnameinfo() HOSTNAME LOOKUP FAILURE
+2025-08-08 15:43:15,119 [ERROR] django.pylibmc:146 set MemcachedError: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 138, in set
+    return self._cache.set(key, value,
+pylibmc.ServerDown: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,138 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,156 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,169 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,182 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,196 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,210 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,225 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,240 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,254 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,267 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,281 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,293 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,311 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:15,324 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,221 [ERROR] django.pylibmc:132 get MemcachedError: error 2 from memcached_get(:1:CUR_TOPINFO): getaddrinfo() or getnameinfo() HOSTNAME LOOKUP FAILURE
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.HostLookupError: error 2 from memcached_get(:1:CUR_TOPINFO): getaddrinfo() or getnameinfo() HOSTNAME LOOKUP FAILURE
+2025-08-08 15:43:19,243 [ERROR] django.pylibmc:146 set MemcachedError: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 138, in set
+    return self._cache.set(key, value,
+pylibmc.ServerDown: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,258 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,271 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,285 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,298 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,312 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,326 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,341 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,355 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,369 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,382 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,397 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,410 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TWO_FACTOR_AUTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,426 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:UserLoginAttempt_172.18.0.1): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:UserLoginAttempt_172.18.0.1): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,442 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:LOGIN_ATTEMPT_LIMIT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:LOGIN_ATTEMPT_LIMIT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,456 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,470 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,484 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:LOGIN_ATTEMPT_LIMIT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:LOGIN_ATTEMPT_LIMIT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,501 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,515 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,530 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,544 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,559 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,574 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,593 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,610 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,625 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:LOGIN_REMEMBER_DAYS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:LOGIN_REMEMBER_DAYS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,639 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,655 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:19,669 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:LOGIN_REMEMBER_DAYS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:LOGIN_REMEMBER_DAYS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,028 [INFO] xmlschema:1274 include_schema Include schema from 'file:///usr/local/lib/python3.10/dist-packages/xmlschema/schemas/XSD_1.1/xsd11-extra.xsd'
+2025-08-08 15:43:20,525 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:FILE_SERVER_ROOT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:FILE_SERVER_ROOT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,550 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,576 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,597 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:FILE_SERVER_ROOT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:FILE_SERVER_ROOT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,620 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:api_avatar_url__72): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:api_avatar_url__72): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,637 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,653 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,670 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,685 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,704 [ERROR] django.pylibmc:146 set MemcachedError: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 138, in set
+    return self._cache.set(key, value,
+pylibmc.ServerDown: error 47 from memcached_set: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,725 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_TITLE): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_TITLE): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,745 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,766 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,782 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_TITLE): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_TITLE): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,798 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_BRANDING_CSS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_BRANDING_CSS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,820 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,846 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,862 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_BRANDING_CSS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_BRANDING_CSS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,883 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,903 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,919 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,933 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SITE_NAME): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,947 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,961 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,977 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:20,991 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_SIGNUP): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,006 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_FORCE_USE_PASSWORD): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_FORCE_USE_PASSWORD): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,023 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,039 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,052 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_FORCE_USE_PASSWORD): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_FORCE_USE_PASSWORD): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,066 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_MIN_LENGT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_MIN_LENGT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,080 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,095 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,108 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_MIN_LENGT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_MIN_LENGT): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,124 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_STRENGTH_): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_STRENGTH_): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,141 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,173 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,198 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_STRENGTH_): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SHARE_LINK_PASSWORD_STRENGTH_): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,216 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:REPO_PASSWORD_MIN_LENGTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:REPO_PASSWORD_MIN_LENGTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,232 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,250 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,264 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:REPO_PASSWORD_MIN_LENGTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:REPO_PASSWORD_MIN_LENGTH): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,280 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,295 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,312 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,326 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:ENABLE_TERMS_AND_CONDITIONS): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,344 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,368 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:autofilled): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,386 [ERROR] django.pylibmc:167 set_many MemcachedError: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 165, in set_many
+    return super(PyLibMCCache, self).set_many(*args, **kwargs)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 127, in set_many
+    failed_keys = self._cache.set_multi(
+pylibmc.ServerDown: error 47 from memcached_set_multi: SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+2025-08-08 15:43:21,401 [ERROR] django.pylibmc:132 get MemcachedError: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/django_pylibmc/memcached.py", line 130, in get
+    return super(PyLibMCCache, self).get(key, default, version)
+  File "/opt/seafile/seafile-server-11.0.13/seahub/thirdpart/django/core/cache/backends/memcached.py", line 75, in get
+    return self._cache.get(key, default)
+pylibmc.ServerDown: error 47 from memcached_get(:1:SERVICE_URL): SERVER HAS FAILED AND IS DISABLED UNTIL TIMED RETRY

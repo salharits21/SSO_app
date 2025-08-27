@@ -1,0 +1,8 @@
+- 172.18.0.1 [08/Aug/2025:14:35:27 +0700] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.000
+- 172.18.0.1 [08/Aug/2025:14:35:27 +0700] "GET /favicon.ico HTTP/1.1" 502 552 "http://localhost:8008/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.001
+- 172.18.0.1 [08/Aug/2025:14:36:12 +0700] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.000
+- 172.18.0.1 [08/Aug/2025:14:36:12 +0700] "GET /favicon.ico HTTP/1.1" 502 552 "http://localhost:8008/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.000
+- 172.18.0.1 [08/Aug/2025:15:43:15 +0700] "GET / HTTP/1.1" 302 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 6.205
+- 172.18.0.1 [08/Aug/2025:15:43:21 +0700] "GET /accounts/login/?next=/ HTTP/1.1" 200 3803 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 6.305
+- 172.18.0.1 [08/Aug/2025:16:37:45 +0700] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.002
+- 172.18.0.1 [08/Aug/2025:16:37:46 +0700] "GET /favicon.ico HTTP/1.1" 502 552 "http://localhost:8008/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" 0.000

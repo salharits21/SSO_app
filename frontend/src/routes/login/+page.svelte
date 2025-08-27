@@ -1,7 +1,7 @@
 <script>
     import { goto } from '$app/navigation';
 
-    let email = '';
+    let identifier = '';
     let password = '';
     let message = '';
     let isLoading = false;
@@ -10,12 +10,12 @@
         isLoading = true;
         message = '';
         try {
-            const response = await fetch('http://localhost:3000/api/auth/login', {
+            const response = await fetch('/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify({ identifier, password }),
             });
             const data = await response.json();
 
@@ -44,8 +44,8 @@
     <h1>Login</h1>
     <form on:submit|preventDefault={handleLogin}>
         <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" bind:value={email} required />
+            <label for="email">Email/Username</label>
+            <input type="email" id="email" bind:value={identifier} required />
         </div>
         <div>
             <label for="password">Password</label>
